@@ -1,6 +1,6 @@
 var ioClient = require('socket.io-client');
 var app = require('express')();
-var http = require('http').Server(app);
+var http = require('http').createServer(app);
 var cors 	= require('cors');
 
 
