@@ -6,6 +6,7 @@
 	"dependencies":{
 		"socket.io-client":"",
 		"socket.io":"0.9.16",
-		"express": ""
+		"express": "",
+		"cors":"2.7.1"
 	}
 }
