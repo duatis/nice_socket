@@ -1,0 +1,11 @@
+{
+	"name": "nice_sockets",
+	"description": "Test sockets for nice",
+	"version": "0.0.1",
+	"main": "app.njs",
+	"dependencies":{
+		"socket.io-client":"",
+		"socket.io":"0.9.16",
+		"express": ""
+	}
+}
