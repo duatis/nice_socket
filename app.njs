@@ -5,6 +5,7 @@ var io = require('socket.io').listen(http);
 
 
 app.get('/', function(req, res){
+	res.write('hola');
 });
 
 
