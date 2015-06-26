@@ -4,10 +4,11 @@ var http = require('http').Server(app);
 var io = require('socket.io').listen(http);
 
 
-app.get('/', function(req, res){
+app.get('/', function(req, res, next){
+	res.sendStatus(200);
 	res.write('hola');
+	res.end();
 });
-
 
 io.on('connection', function(socket){
   var nice_socket = ioClient.connect("http://nice.cleverapps.io");
