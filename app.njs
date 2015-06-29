@@ -21,7 +21,7 @@ app.get('/', function(req, res, next){
 
 io.on('connection', function(socket){
   console.log('connected');
-  socket.emit('first_data', {hola: 'mundo'}});
+  socket.emit('first_data', {hola: 'mundo'});
   var nice_socket = ioClient.connect("http://nice.cleverapps.io");
   nice_socket.on('first_data', function(data){
   		console.log(data);
